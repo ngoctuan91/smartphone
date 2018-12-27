@@ -328,7 +328,7 @@
 					<li class="hidden-sm hidden-xs"><a href="#">iPad</a></li>
 					<li class="hidden-sm hidden-xs"><a href="#">Xiaomi</a></li>
 					<li class="hidden-sm hidden-xs"><a href="#">Samsung</a></li>
-					<li class="show-hover">
+					<li class="show-hover" onclick="click_xs_show(this)">
 						<span>Hãng khác</span> <i class="fa fa-caret-down"></i>
 						<div class="show-down show-down-hang">
     						<a href="#">Oppo</a>
@@ -366,7 +366,7 @@
 					<li class="hidden-sm hidden-xs"><a href="#">Dưới 3 triệu</a></li>
 					<li class="hidden-sm hidden-xs"><a href="#">Từ 3 - 7 triệu</a></li>
 					<li class="hidden-sm hidden-xs"><a href="#">Từ 7 - 10 triệu</a></li>
-					<li class="show-hover">
+					<li class="show-hover" onclick="click_xs_show(this)">
 						<span>Giá khác</span> <i class="fa fa-caret-down"></i>
 						<div class="show-down show-down-price">
     						<a href="#">Dưới 3 triệu</a>
@@ -387,7 +387,7 @@
 							<a href="#">256G</a>
 						</div>
 					</li>
-					<li class="pull-right show-hover">
+					<li class="pull-right show-hover" onclick="click_xs_show(this)">
 						<span>Sắp xếp</span> <i class="fa fa-caret-down"></i>
 						<div class="show-down show-down-all">
 							<a href="#">Sản phẩm xem nhiều</a>
@@ -1058,6 +1058,11 @@
   <!-- Local bootstrap  JS -->
  <script src="js/jquery-3.3.1.min.js"></script>
  <script src="js/bootstrap.min.js"></script>
- <script src="index.js"></script>	
+ <script src="index.js"></script>
+  <script>
+ 	function click_xs_show(a){
+ 		$(a).children("div").toggle();
+ 	}
+ </script>		
 </body>
 </html>

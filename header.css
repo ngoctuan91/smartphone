@@ -149,7 +149,7 @@ a:focus, a:hover {
 		display: none;
 	 }
  	#navbar-main .navbar-nav>li>a {
- 	     padding: 0;
+ 	     padding: 0 5px;
  	     line-height: 50px;
 	}
 	#navbar-main .nav{
@@ -157,6 +157,9 @@ a:focus, a:hover {
 		display: flex;
 		justify-content: space-between;
 	}
+}
+#navbar-main .nav a:hover{
+	 background-color: #e65100;
 }
 @media (max-width: 767px){
 	 #navbar-main .nav a:hover{
