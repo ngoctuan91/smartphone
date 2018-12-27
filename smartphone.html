@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>Smart phhone Xyz - my 1st project</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta property="og:title" content="Online Shop">
+    <meta property="og:description" content="My 1st Project">
+    <meta property="og:image" content="https://drive.google.com/file/d/1rc35DrjJIZIOgcrpdyoK7Ovyk2B_NJOk/view?usp=sharing">
+    <meta property="og:site_name" content="Welcome">
+
+	<link type="image/x-icon" href="img/favicon.ico" rel="icon">
+    <!-- Local bootstrap CSS  -->
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"" href="OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css"" href="OwlCarousel2-2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css"" href="smartphonexyz.css">
+    <link rel="stylesheet" type="text/css"" href="footer.css">
+</head>
+<body>
+<div id="header">
+
+	<!-- nav top -->
+	<div id="nav-top" class="hidden-sm hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class=" col-lg-6 col-md-4">
+					<span><i class="fa fa-star" aria-hidden="true"></i> Hệ thống bán lẻ Di Động Thông Minh</span>
+				</div>
+				<div class="col-lg-6 col-md-8">
+					<ul class="list-unstyled pull-right">
+						<li class="col-6 nav-top-show">
+							<a href="#"><i class="fa fa-star" aria-hidden="true"></i> <span>Chăm sóc khách hàng <i class="fa fa-caret-down"></i></span></a>
+							<ul class="list-unstyled nav-top-down">
+								<li><a href="#">Hỗ trợ facebook</a></li>
+								<li><a href="#">Hỏi đáp mua hàng online</a></li>
+								<li><a href="#">Chính sách đổi trả</a></li>
+								<li><a href="#">Chính sách bảo hành</a></li>
+								<li><a href="#">Phương thức thanh toán</a></li>
+							</ul>
+						</li>
+						<li class="col-6"><a href="#" title="Chanel chính thức"><i class="fa fa-youtube-play"></i> dReviews</a></li>
+						<li class="col-6"><a href="#" title="Fanpage chính thức"><i class="fa fa-facebook-f"></i> Fanpage</a></li>
+						<li class="col-6"> 
+							<select name="local" id="select-local">
+								<option value="">Hà Nội</option>
+								<option value="">Hồ Chí Minh</option>
+								<option value="">Đà Nẵng</option>
+								<option value="">Hải phòng</option>
+								<option value="">Cần Thơ</option>
+							</select>
+						</li>
+						<div class="clear"></div><!--  clear both -->
+					</ul>
+				</div>
+
+			</div>		<!-- row -->
+		</div> <!-- container -->
+	</div> <!-- nav-top hidden sm xs -->
+	
+	<!-- nav header -->
+	<div id="nav-header">
+		<div class="container">
+				<div class="col-12 col-sm-12 col-lg-3 col-1">
+					<a href="index" title="Di động thông minh"><img src="img/logo.png" alt="logo" id="logo"></a>
+				</div>
+				<div class="col-12 col-sm-12 col-lg-4 col-2">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Bạn cần tìm...">
+						<span class="input-group-btn">
+					    	<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+					    </span>
+					</div><!-- /input-group -->
+				</div>
+				<div class="col-12 col-sm-12 col-lg-5 hidden-xs col-3">
+					<ul class="list-unstyled">
+						<li class="col-sm-4">
+							<a href="#" title="Tin công nghệ" class="nav-i-s">
+								<i class="fa fa-newspaper-o"></i> 
+								<span>Tin tức</span>
+							</a>
+						</li>
+						<li class="col-sm-4  nav-header-show">
+							<a href="#" class="nav-i-s">
+								<i class="fa fa-user-o"></i> 
+								<span>Tài khoản <i class="fa fa-caret-down" style="font-size: 15px;"></i> </span> 
+							</a>
+							<ul class="list-unstyled nav-top-down">
+								<li><button class="btn btn-danger btn-block" data-toggle="modal" data-target="#dangnhap">Đăng nhập</button></li>
+								<li><span>Chưa có tài khoản?</span></li>
+								<li><a href="" title="đăng ký" class="orange-color" data-toggle="modal" data-target="#dangky">Đăng ký tài khoản mới</a></li>
+							</ul>
+						</li>
+						<li class="col-sm-4"><!--  gio hang -->
+							<a href="#"><i class="fa fa-shopping-cart"></i><span class="badge" style="background: #f60">0</span></a>
+						</li><!--  gio hang -->
+					</ul>
+				</div>
+		</div>
+	</div>
+				<!-- modal đăng nhập   -->
+			<div class="modal fade" id="dangnhap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title modal-info" id="exampleModalLabel">Đăng nhập</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="control-label">Tài khoản</label>
+			            <input type="text" class="form-control" id="recipient-name" placeholder="Nhập địa chỉ e-mail">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label">Mật khẩu</label>
+			             <input type="text" class="form-control" id="recipient-name" placeholder="Nhập mật khẩu">
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-lg btn-danger pull-left">Đăng nhập</button>
+			        <a data-toggle="modal" href ="#dangky" data-dismiss ="modal" class="orange-color">Bạn chưa có tài khoản? Đăng ký ngay</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- modal đăng ký -->
+			<div class="modal fade" id="dangky" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title modal-info" id="exampleModalLabel">Đăng ký tài khoản</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="control-label">Tài khoản</label>
+			            <input type="text" class="form-control" id="recipient-name" placeholder="Nhập địa chỉ e-mail">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label">Mật khẩu</label>
+			             <input type="text" class="form-control" id="recipient-name" placeholder="Nhập mật khẩu">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label">Xác nhận mật khẩu</label>
+			             <input type="text" class="form-control" id="recipient-name" placeholder="Nhập lại mật khẩu">
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-lg btn-danger pull-left">Đăng ký</button>
+			        <a href="#dangnhap" data-dismiss = "modal" data-toggle = "modal" class="orange-color">Bạn đã có tài khoản? Đăng nhập tại đây</a>
+			      </div>
+			    </div>
+			  </div>
+			</div> <!-- modal đăng ký và đăng nhập-->
+
+	<!-- navbar -->
+	<div id="navbar-main">
+			<nav class="navbar navbar-default orange-bg-color" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand hidden-lg hidden-md hidden-sm white-color" href="#">Hotline: 0961105333</a>
+					</div>
+			
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-mobile" style="font-size: 20px"></i>Điện thoại <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+									<li><a href="products.html">iPhone</a></li>
+									<li><a href="products.html">Xiaomi</a></li>
+									<li><a href="products.html">Meizu</a></li>
+									<li><a href="products.html">Samsung</a></li>
+									<li><a href="products.html">Blackberry</a></li>
+									<li><a href="products.html">Oppo</a></li>
+									<li><a href="products.html">Nokia</a></li>
+									<li><a href="products.html"> Vsmart</a></li>
+									<li><a href="products.html">Xem tất cả</a></li>
+									<li role="separator" class="divider"></li>
+					          </ul>
+							</li>
+							 <li class="dropdown-none">
+								<a href="products.html"><i class="fa fa-mobile" style="font-size: 20px"></i>Điện thoại</a>
+							</li>
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-tablet"></i>Tablet <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+									<li><a href="products.html">iPad</a></li>
+									<li><a href="products.html">Galaxy Tab</a></li>
+									<li><a href="products.html">Asus Pad</a></li>
+									<li><a href="products.html">Playbook</a></li>
+									<li><a href="products.html">Xem tất cả</a></li>
+									<li role="separator" class="divider"></li> 
+					          </ul>
+							</li>
+							<li class="dropdown-none">
+								<a href="products.html"><i class="fa fa-tablet"></i>Tablet</a>
+							</li>
+							<li>
+								<a href="products.html"><i class="fa fa-apple"></i>Apple</a>
+							</li>
+							<li>
+								<a href="products.html"><i class="fa fa-android"></i>Android</a>
+							</li>
+							<li>
+								<a href="products.html"><i class="fa fa-clock-o"></i>Apple Watch</a>
+							</li>
+							<li>
+								<a href="products.html"><i class="fa fa-headphones"></i>Phụ kiện</a>
+							</li>
+							<li class="hidden-sm">
+								<a href="products.html"><i class="fa fa-cc-visa"></i>Trả góp 0%</a>
+							</li>
+							<li class="">
+								<a href="products.html"><i class="fa fa-gift"></i>Khuyến mãi</a>
+							</li>
+						</ul>
+						
+					</div><!-- /.navbar-collapse -->
+				</div> <!-- container -->
+			</nav> 
+	</div> <!-- nav bar --> 
+</div> <!-- header -->
+<!-- header end -->
+
+<!-- ô liên kết  -->
+<div id="main-content">
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li>
+					<a href="index.html">Trang chủ</a>
+				</li>
+				<li>
+					<a href="products.html">iPhone</a>
+				</li>
+				<li class="active">iPhone X 128G Mới Chưa Kích Hoạt</li>
+			</ol>
+		</div>
+	<!-- ô liên kết  -->
+		<div class="main-title">
+			<div class="row">
+				<h3>iPhone 8 Plus 64Gb Mới Trôi Bảo Hành Máy Trần <span class="title-txt">chưa kích hoạt, bản Hàn Quốc, kèm sạc cable chính hãng</span></h3>
+				<ul class="list-unstyled">
+						<li class="rating pull-left">
+							<span class="hidden-xs">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i> 
+							</span>
+							<a href="#"> (10 đánh giá) - </a>
+							<span class="rate-view"><i class="fa fa-eye"></i> 9999</span>
+						</li>
+						<li class="pull-left hot-tip hidden-xs">
+							<span class="dot-ping"></span>
+							<span class="dot"></span>
+							<a href="#" class="dot-text"> Chào năm mới, vui giáng sinh, rinh quà tặng</a>
+						</li>
+						<li class="col-rate-right pull-right">
+							<button class= "btn btn-primary"><span><i class="fa fa-thumbs-o-up"></i> Thích 99</span></button>
+							<button class= "btn btn-primary"><span>Chia sẻ</span></button>
+						</li>
+				</ul>
+			</div>
+		</div><!--  main title -->
+
+		<div id="main-price"> 
+			<div class="row"> <!-- row main price-->
+				<div class="col-md-5"> <!-- col-md-5 slide -->
+					<div class="col-thumb"> <!-- col thumb  -->
+						<div id="smartphone-slide" class="carousel slide" data-ride="carousel">  <!-- slide -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="img/iphone8.png" id="mauanh">
+								</div>
+								<div class="item">
+									<img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="img/iphone-8-plus-1.jpg">
+								</div>
+								<div class="item">
+									<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="img/iphone-8-plus-mat-truoc.jpg">
+								</div>
+								<div class="item">
+									<img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="img/iphone-8-plus-fullbox.jpg">
+								</div>
+							</div>
+							<a class="left carousel-control" href="#smartphone-slide" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+							<a class="right carousel-control" href="#smartphone-slide" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+						</div> <!-- slide -->
+					</div> <!-- col thumb  -->
+					<div class="smartphone-info"> <!-- smartphone info -->
+						<div class="row">
+							<div class="col-xs-3">
+								<a href="#"><i class="fa fa-cube"></i></a>
+								<p>Bộ sản phẩm(0)</p>
+							</div>
+							<div class="col-xs-3">
+								<a href="#"><i class="fa fa-picture-o"></i></a>
+								<p>Bộ ảnh(4)</p>
+							</div>
+							<div class="col-xs-3">
+								<a href="#"><i class="fa fa-youtube-play"></i></a>
+								<p>Video(0)</p>
+							</div>
+							<div class="col-xs-3">
+								<a href="#"><i class="fa fa-newspaper-o"></i></a>
+								<p>Tin tức(0)</p>
+							</div>
+						</div>
+					</div> <!-- smartphone info -->
+					<p class="info-txt hidden-xs hidden-sm"><span><b>Thông tin sản phẩm</b>: </span><span>iPhone 8 Plus bản dự trữ đổi bảo hành đã kích hoạt, phiên bản Hàn Quốc. Máy hình thức mới 100%, nhưng chỉ có máy trần được tặng kèm phụ kiện sạc cable Titan chính hãng. Với mức giá rẻ hơn hàng mới nhập khẩu khoảng 3-4 triệu, đây là một lựa chọn kinh tế và hợp lý. Sản phẩm được bảo hành 12 tháng, 1 đổi 1 trong 15 ngày nếu có lỗi do nhà sản xuất. <span style="color: red"><b>Cam kết chất lượng tương đương sản phẩm chính hãng</b></span></span></p>
+
+					<div class="ads-img hidden-sm hidden-xs">
+						<a href="#"><img src="img/gif-quang-cao-apple-watch-new.gif" alt="quang-cao-apple-watch-new"></a>
+					</div>
+				</div> <!-- col-md-5 slide -->
+
+				<div class="col-md-7 price-tag"> 
+					<div class="row row-1"> <!-- row 1 -->
+						<div class="col-md-7 col-price"> <!-- col-md-7 price -->
+							<h3><b>15,190,000 VNĐ</b> <span>(Màu bạc)</span></h3>
+							<div class="check-color">
+								<label class="mausac">Màu sắc</label>
+								<label class="check-box">
+									<input type="radio" checked="checked" name="radio" id="maubac" onclick="chonmau()">
+									<span class="checkmark" style="background-color: #c0c0c0;"></span>
+									</label>
+								<label class="check-box">
+									<input type="radio" name="radio" id="maudo" onclick="chonmau()">
+									<span class="checkmark" style="background-color: #ff0000"></span>
+									</label>
+								<label class="check-box">
+									<input type="radio" name="radio" id="mauvang" onclick="chonmau()" >
+									<span class="checkmark" style="background-color: #ffd700"></span>
+									</label>
+								<label class="check-box">
+									<input type="radio" name="radio" id="mauxam" onclick="chonmau()" >
+									<span class="checkmark" style="background-color: #707070"></span>
+								</label>
+							</div>
+							<p class="care-title">Chọn bảo hành</p>
+							<div class="dcare btn-effect"> <!-- dcare -->
+								<select name="" id="select-care" onchange="select_care()">
+									<option value="careplus">dCare+ (Toàn diện)</option>
+									<option value="cares">dCareS (Siêu tốc) (900, 000 VNĐ)</option>
+								</select>
+								<span class="care-tooltip" data-toggle="tooltip" data-placement="top" title="12 tháng bảo hành cả nguồn, vân tay"> <i class="fa fa-question-circle-o"></i></span>
+								<button class="btn btn-muangay">MUA NGAY<span class="btn-txt">Giao tận nơi hoặc nhận ở cửa hàng</span><span class="btn-hover"></span></button>
+								<button class="btn btn-tragop">TRẢ GỚP LÃI SUẤT THẤP<span class="btn-txt">Tư vấn qua điện thoại</span><span class="btn-hover"></span></button>
+								<p class="info-txt hidden-md hidden-lg"><span><b>Thông tin sản phẩm</b>: </span><span>iPhone 8 Plus bản dự trữ đổi bảo hành đã kích hoạt, phiên bản Hàn Quốc. Máy hình thức mới 100%, nhưng chỉ có máy trần được tặng kèm phụ kiện sạc cable Titan chính hãng. Với mức giá rẻ hơn hàng mới nhập khẩu khoảng 3-4 triệu, đây là một lựa chọn kinh tế và hợp lý. Sản phẩm được bảo hành 12 tháng, 1 đổi 1 trong 15 ngày nếu có lỗi do nhà sản xuất. <span style="color: red"><b>Cam kết chất lượng tương đương sản phẩm chính hãng</b></span></span></p>								
+							</div> <!-- dcare -->
+						</div> <!-- col-md-7 price -->
+						<div class="col-md-5 col-care"> <!-- col-md-5 col-care -->
+							<div class="row"> <!-- col-care row -->
+								<div class="panel panel-default" id="care-plus"><!--  panel care plus-->
+									<div class="panel-heading">
+									    <h3 class="panel-title">Chế độ bảo hành</h3>
+									</div>
+									<div class="panel-body">
+									  	<p><b>dCare+ (Gói Toàn Diện)</b></p>
+									  	<div class="panel-body-box">
+									    	<p>1 đổi 1, 30 ngày</p>
+									    	<p>Bảo hành 15 tháng</p>
+									    	<p>Xử lý trong 15 ngày</p>
+										</div>
+									    <div class="panel-body-img">
+									    	<img src="img/dcareplus.png" alt="">
+									    </div>
+									    <p>Bảo hành toàn diện phần cứng bao gồm nguồn, màn hình, vân tay. Ngoại trừ rơi móp vào nước</p>
+									    <div class="panel-care-info">
+									    	<p>THÔNG TIN BẢO HÀNH CAO CẤP</p>
+									    	<a class="btn">Xem chi tiết</a>
+									    </div>							 	
+								  	</div>
+								</div> <!-- panel care plus-->
+
+								<div class="panel panel-default" id="care-s"> <!--  panel care S-->
+									<div class="panel-heading">
+									    <h3 class="panel-title">Chế độ bảo hành</h3>
+									</div>
+									<div class="panel-body">
+									  	<p><b>dCareS (Gói Siêu tốc)</b></p>
+									  	<div class="panel-body-box">
+									    	<p>1 đổi 1, 45 ngày</p>
+									    	<p>Bảo hành 18 tháng</p>
+									    	<p>Xử lý trong 7 ngày</p>
+										</div>
+									    <div class="panel-body-img">
+									    	<img src="img/dcares.png" alt="">
+									    </div>
+									    <p>Bảo hành toàn diện phần cứng bao gồm nguồn, màn hình, vân tay cả rơi móp. Ngoại trừ vào nước</p>
+									    <div class="panel-care-info">
+									    	<p>THÔNG TIN BẢO HÀNH CAO CẤP</p>
+									    	<a class="btn">Xem chi tiết</a>
+									    </div>							 	
+								  	</div>
+								</div> <!-- panel care S-->
+							</div> <!-- col-care row -->
+						</div> <!-- col-md-5 col-care -->
+					</div> <!-- row 1  -->
+					
+					<div class="row row-2"> <!-- row 2 -->
+						<div class="col-md-7 col-sale">  <!-- col sale -->
+							<div class="panel panel-default"> 
+								<div class="panel-heading">KHUYẾN MÃI VÀ ƯU ĐÃI</div>
+								<div class="panel-body">
+							    	<p><a href="#" style="color: #f60"><b>CHRISTMAS DAYS: Mua smartphone giá gốc!</b></a></p>
+							    	<p><a href="#" style="color: #0000ff"><b>Flash sale</b>: Apple Watch giảm khủng 500k</a></p>
+							    	<p>
+							    		<span><i class="fa fa-heart"></i> <b class="orange-color">20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K <br>
+											  <i class="fa fa-heart"></i> Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</b></span> <br>
+										<i class="fa fa-heart"></i> Tặng sạc, cable Apple chính hãng Titan trị giá <b>300.000vnđ</b> <br>
+										<i class="fa fa-heart"></i> Tặng gậy chụp ảnh trị giá <b>99.000vnđ</b> <br>
+										<i class="fa fa-heart"></i> Tặng tay cầm chơi game trị giá <b>99.000vnđ</b> <br>
+										<i class="fa fa-heart"></i> Combo Ốp Lưng + Kính Cường Lực giá chỉ <b>69.000vnđ</b> <br>
+										<i class="fa fa-heart"></i> Nâng cấp sạc, cable chính hãng Apple phụ <b>250.000vnđ</b>
+									</p>
+								</div>
+							</div>
+						</div> <!-- col sale -->
+						<div class="col-md-5 col-address"> <!-- col address -->
+							<div class="panel panel-default"> 
+								<div class="panel-heading"><b>Danh sách cửa hàng gần bạn</b></div>
+								<div class="panel-body">
+									<ul class="list-unstyled">
+										<li>
+											<i class="fa fa-home"></i><span> Hotline toàn quốc - </span><a href="#">1900.000</a>
+										</li>
+										<li>
+											<i class="fa fa-home"></i><span> 1234 Thái Thịnh, Q.Đống Đa, Hà Nội - </span><a href="#">099.999.991</a>
+										</li>
+										<li>
+											<i class="fa fa-home"></i><span> 987 Xã Đàn , Q.Đống Đa, Hà Nội - </span><a href="#">099.999.992</a>
+										</li>
+										<li>
+											<i class="fa fa-home"></i><span> 876 Xuân Thủy, Q.Cầu Giấy, Hà Nội - </span><a href="#">099.999.993</a>
+										</li>
+										<li>
+											<i class="fa fa-home"></i><span> 999 Ngã 3 Quảng Oai, TT Tây Đằng, Ba Vì, Hà Nội - </span><a href="#">099.999.994</a>
+										</li>
+										<li>
+											<i class="fa fa-home"></i><span> 789 Nguyễn Văn Cừ, Long Biên, Hà Nội - </span><a href="#">099.999.995</a>
+										</li>
+									</ul>							    	
+								</div>
+							</div> 
+						</div><!-- col address -->
+					</div>  <!-- row 2 -->
+				</div> <!-- col-md-7 price-tag -->
+			</div><!--  row main price-->
+		</div> <!-- main price -->
+
+		<div class="row-md-news hidden-xs hidden-sm"> <!-- row md new -->
+				<p class="p-title">TIN TỨC LIÊN QUAN IPHONE 8 PLUS 64GB MỚI TRÔI BẢO HÀNH MÁY TRẦN</p>
+				<div class="md-news-thumb"> <!-- md-news thumb -->
+						<div class="owl-carousel owl-theme">
+							<div class="link-thumb">
+								<a href="#" title="Đây  là mẫu iPhone cũ tuyệt vời nhất">
+									<img src="img/row-news-1.jpg" alt="">
+									<p><b>Đây  là mẫu iPhone cũ tuyệt vời nhất</b></p>
+									<span class="news-date">Mr.Tuna / 25-12-2018</span>
+								</a>
+							</div>
+							<div class="link-thumb">
+								<a href="#" title="Top 10 smartphone cao cấp nhất 2018">
+									<img src="img/row-news-2.jpg" alt="">
+									<p><b>Top 10 smartphone cao cấp nhất 2018</b></p>
+									<span class="news-date">Mr.Tuna / 25-12-2018</span>
+								</a>
+							</div>
+							<div class="link-thumb">
+								<a href="#" title="iPhone nào đáng mua nhất cuối năm 2018 ?">
+									<img src="img/row-news-3.jpg" alt="">
+									<p><b>iPhone nào đáng mua nhất cuối năm 2018 ?</b></p>
+									<span class="news-date">Mr.Tuna / 25-12-2018</span>
+								</a>
+							</div>
+							<div class="link-thumb">
+								<a href="#" title="4 mẫu iPhone đáng mua nhất cuối năm! Cái thứ 4 mua ngay vì quá HOT">
+									<img src="img/row-news-4.jpg" alt="">
+									<p><b>4 mẫu iPhone đáng mua nhất cuối năm! Cái thứ 4 mua ngay vì quá HOT</b></p>
+									<span class="news-date">Mr.Tuna / 25-12-2018</span>
+								</a>
+							</div>
+							<div class="link-thumb">
+								<a href="#" title="Đặt hàng iPhone 8 Plus mới giá chỉ 14.990.000đ, quà tặng lên tới 1,5 triệu">
+									<img src="img/row-news-5.jpg" alt="">
+									<p><b>Đặt hàng iPhone 8 Plus mới giá chỉ 14.990.000đ, quà tặng lên tới 1,5 triệu</b></p>
+									<span class="news-date">Mr.Tuna / 25-12-2018</span>
+								</a>
+							</div>
+							<div class="link-thumb">
+								<a href="#" title="">
+									<img src="img/row-news-2.jpg" alt="">
+									<p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b></p>
+									<span class="news-date">Mr.Tuna / 25-12-2018</span>
+								</a>
+							</div>
+							<div class="link-thumb">
+								<a href="#" title="">
+									<img src="img/row-news-3.jpg" alt="">
+									<p><b>TSoluta beatae, accusantium ratione unde voluptatem consequuntur ipsum natus veniam cum ab, 8</b></p>
+									<span class="news-date">Mr.Tuna / 25-12-2018</span>
+								</a>
+							</div>
+							<div class="link-thumb">
+								<a href="#" title="">
+									<img src="img/row-news-1.jpg" alt="">
+									<p><b>Totam mollitia nihil quis ea, dolorum. Fugit cupiditate, error aliquid</b></p>
+									<span class="news-date">Mr.Tuna / 25-12-2018</span>
+								</a>
+							</div>
+						</div>
+				</div> <!-- md-news thumb -->
+		</div> <!-- row-md-news -->
+
+		<div class="main-info"> <!-- main info -->
+			<div class="row"> <!-- row -->
+				<div class="col-md-8"> <!-- col md 8 -->
+					<p class="p-title">Đánh giá chi tiết</p>
+					<div class="info-content"> <!-- info content -->
+						<p><a href="#"><b class="orange-color">iPhone 8 Plus trôi bảo hành</b></a> hay còn được gọi là (iPhone 8 Plus trả bảo hành, iPhone 8 Plus đổi bảo hành) là những sản phẩm 8 Plus mới có mức giá tốt nhất thị trường hiện nay. So với những sản phẩm mới đủ bảo hành hay máy chính hãng thì những sản phẩm này thường rẻ hơn từ 4 – 5 triệu đồng. Vậy iPhone 8 Plus trôi bảo hành là sản phẩm như thế nào ? Và có nên mua sản phẩm này hay không ?</p>
+						<p><b class="orange-color">iPhone trôi bảo hành là gì ?</b> <br></p>
+						<p>Nếu như trước đây chúng ta chỉ biết đến iPhone brandnew, iPhone cũ likenew… thì nhiều bạn chắc sẽ thấy lạ và thắc mắc với cụm từ iPhone trôi bảo hành hay còn được gọi là iPhone đổi bảo hành là gì? thì bảng dưới đây sẽ cung cấp cho bạn những thông tin hữu ích nhất về sản phẩm này. Vui lòng tham khảo bài viết: Các chủng loại iPhone và cách phân biệt cần biết rõ kẻo bị nhầm</p>						
+						<p class="collapse" id="collapseExample">
+						Đối với iPhone trôi bảo hành hay iPhone đổi bảo hành, đúng như tên gọi, khi Apple bán iPhone ra thì có 1 lượng iPhone mới được dự trữ để phục vụ công tác bảo hành theo chính sách 1 đổi 1. Sau chu kì khoảng 1,2 năm, lượng hàng dự trữ này thừa và được bán thanh lý ra bên ngoài. Đặc điểm iPhone đổi bảo hành luôn chỉ có máy trần, máy chưa kích hoạt trên hệ thống, và khi kích hoạt thì hạn bảo hành sẽ được tính theo hạn bảo hành còn lại của chiếc iPhone được đổi. Nếu so sánh chất lượng thì iPhone đổi bảo hành còn tốt hơn iPhone CPO, hay Refurbish, nhưng chỉ thua kém về việc không có phụ kiện đi kèm. <br>
+
+						Có nên mua iPhone 8 Plus trôi bảo hành ? <br>
+
+						Như đã phân tích ở trên, iPhone 8 Plus trả bảo hành (trôi bảo hành) là sản phẩm Apple dùng để dự trữ và đổi trả cho iPhone của người dùng bị lỗi, vì vậy sản phẩm này là máy mới 100%, chưa kích hoạt (chưa active) hề qua sử dụng hay sửa chữa. Điểm yếu của iPhone 8 Plus đổi bảo hành là sản phẩm máy trần và khi kích hoạt sẽ bị trôi bảo hành theo hạn đổi trả của hãng. Tuy nhiên người dùng không nên quá để tâm điều này khi mua hiện Apple chưa có trung tâm sửa chữa chính hãng tại Việt Nam và những hệ thống, cơ sở phân phối iPhone 8 Plus trôi bảo hành đều có chính hãng hỗ trợ bảo hành lâu dài. Bên cạnh đó, giá iPhone 8 Plus TBH sẽ cực kỳ tốt, rẻ hơn khá nhiều so với máy CPO, Refurbish, hay máy chưa kích hoạt đủ bảo hành. <br>
+
+
+						iPhone 8 Plus Trôi Bảo Hành 64GB tại Di Động Thông Minh <br>
+
+						Nên mua iPhone 8 Plus trôi bảo hành ở đâu uy tín ? <br>
+
+						Di Động Thông Minh luôn là hệ thống dẫn đầu trong việc phát hiện các sản phẩm iPhone ngon, bổ, rẻ phù hợp với đa số khách hàng mà nổi bật trong đó phải kể tới sản phẩm iPhone Chưa Active, Đổi Bảo hành – Nobox đang được rất nhiều bạn quan tâm và lựa chọn. Và iPhone 8 Plus cũng không phải ngoại lệ, đối với dòng sản phẩm Trôi bảo hành thì Di Động Thông Minh có 2 sản phẩm là iPhone 8 Plus trôi bảo hành chưa active (chưa kích hoạt) và iPhone 8 Plus trôi bảo hành đã active (đã kích hoạt). <br>
+
+						Thông thường với các máy iPhone Trôi Bảo Hành trên thị trường chỉ có máy trần, không hộp, tùy vào tại các cửa hàng phân phối sẽ tặng cho khách phụ kiện đi kèm. Tại hệ thống Di Động Thông Minh, khách hàng được tặng kèm bộ sạc cáp chính hãng Titan bảo hành 1 đổi 1 trong 12 tháng hoặc với khách hàng có nhu cầu mua làm quà tặng thì sẽ được hỗ trợ máy iPhone 8 Plus trôi bảo hành fullbox phụ kiện zin với giá cực kỳ tốt. Thời điểm hiện tại, giá iPhone 8 Plus trôi bảo hành DDTM chỉ hơn 15 triệu, rẻ nhất thị trường, cùng với đó là hỗ trợ bảo hành rất lâu dài lên tới 18 tháng, 1 đổi 1 trong 45 ngày. Với khách hàng chưa đủ kinh tế thì sẽ được hỗ trợ trả góp iPhone 8 Plus trôi bảo hành chỉ từ 8 triệu đồng, thủ tục đăng ký và xác nhận nhanh chóng. <br>
+
+
+						Di Động Thông Minh <br>
+
+						Các sản phẩm iPhone 8 Plus Trôi Bảo Hành 64GB tại Di Động Thông Minh có chất lượng cao nhất <br>
+
+						– Được chọn kĩ về hình thức, loại bỏ các máy xước xát do vận chuyển <br>
+
+						– Được tặng kèm sạc cáp chính hãng Titan bảo hành 12 tháng <br>
+
+						– Được hỗ trợ nâng cấp các gói bảo hành mở rộng dCare+ và dCareS <br>
+
+						– Được hỗ trợ nhập lại lên đời máy trọn đời với giá cao <br>
+
+						Như vậy, với mức giá rẻ hơn nhiều hàng mới, và chênh lệch không nhiều với hàng qua sử dụng thì liệu bạn có iPhone đổi bảo hành thay vì iPhone cũ?  <br>
+
+						>> Tham khảo thêm các sản phẩm iPhone 8 Plus có tại Di Động Thông Minh : <br>
+
+						iPhone 8 Plus cũ <br>
+						iPhone 8 Plus chính hãng <br>
+						iPhone 8 Plus nhập khẩu mới <br>
+						iPhone 8 Plus lock <br>
+						Địa điểm mua iPhone 8 Plus trôi bảo hành 64GB uy tín trên toàn quốc: <br>
+
+						– 119 Thái Thịnh – Thịnh Quang – Đống Đa – Hà Nội <br>
+						– 208 Xã Đàn – Phương Liên – Đống Đa – Hà Nội <br>
+						– 95 Xuân Thủy – Cầu Giấy – Hà Nội <br>
+						– 65 Hàm Nghi – Thanh Khê – Đà Nẵng <br>
+						– 95 Hàm Nghi – Thanh Khê – Đà Nẵng <br>
+						– 392 Hoàng Diệu – Phường 5 – Quận 4 – TP.HCM
+						– 699 Lê Hồng Phong – Phường 10 – Quận 10 – TP.HCM <br>
+						– 701 Lê Hồng Phong – Phường 10 – Quận 10 – TP.HCM <br>
+						– 325 Hoàng Văn Thụ – Phường 2 – Quận Tân Bình – TP.HCM <br>
+						– 482 Quang Trung – Phường 10 – Quận Gò Vấp – TP.HCM <br>
+						– 55 3/2- Xuân Khánh – Quận Ninh Kiều – Cần Thơ <br>
+						– 467 Lương Ngọc Quyến – TP.Thái Nguyên <br>
+						– 56 Trần hưng Đạo, TP Hải Dương <br>
+						– 1176 Trần Hưng Đạo , TP Long Xuyên , An Giang <br>
+						</p>
+						<p class="btn-docthem orange-color" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<span><b>Đọc thêm</b> <i class="fa fa-caret-down"></i></span>
+						</p>									 
+					</div> <!-- info content -->
+
+
+					<div class="info-comment">
+							<p class="p-title">ĐÁNH GIÁ & NHẬN XÉT IPHONE 8 PLUS 64GB MỚI TRÔI BẢO HÀNH MÁY TRẦN</p>
+							<table class="table table-bordered"> <!-- table star rate -->
+								<td class="col-md-3 col-star cmt-col">
+									<span>4.5/5.0</span>
+									<div class="orange-color">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</div>
+									<a href="#">11 đánh giá và nhận xét</a>
+								</td>
+								<td class="col-md-5 col-progress list-unstyled cmt-col"> <!-- col-progress -->
+									<li>
+										<span>6 sao</span>
+										<span class="progress">
+										  <span class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+										  </span>
+										</span>
+										<span>6</span>
+									</li>
+									<li>
+										<span>4 sao</span>
+										<span class="progress">
+										  <span class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+										  </span>
+										</span>
+										<span>4</span>
+									</li>
+									<li>
+										<span>1 sao</span>
+										<span class="progress">
+										  <span class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+										  </span>
+										</span>
+										<span>1</span>
+									</li>
+									<li>
+										<span>0 sao</span>
+										<span class="progress">
+										  <span class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+										  </span>
+										</span>
+										<span>0</span>
+									</li>
+									<li>
+										<span>0 sao</span>
+										<span class="progress">
+										  <span class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+										  </span>
+										</span>
+										<span>0</span>
+									</li>
+								</td> <!-- col-progress -->
+								<td class="col-md-4 col-send-cmt cmt-col"><!--  col-send-cmt -->
+									<p>Bạn đã dùng sản phẩm này ?</p>
+									<a href="#" style="color: #fff">Gửi đánh giá</a>
+								</td> <!--  col-send-cmt -->
+							</table> <!-- table star rate -->
+
+							<p class="sel-comment">
+								<span>99 đánh giá và bình luận</span> 
+								<span class="hidden-xs"><input type="checkbox"> Xem bình luận của admin</span>
+								<input type="text" class="pull-right hidden-xs hidden-md" placeholder="Tìm theo nội dung người gửi">
+							</p> <!-- sel-comment -->
+							<ul class="media-list customer-cmt">  <!-- cumstomer comment -->
+							  <li class="media">
+							    <div class="media-left">
+							        <img class="media-object" src="img/user-43950-100x100.png" alt="">
+							    </div>
+							    <div class="media-body">						      
+							      <p class="customer-name">Lorem ipsum dolor sit amet							      
+							      	<span class="orange-color pull-right">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+							      </p>
+							      <p>voluptatem neque est unde, debitis soluta ex consectetur dicta, hic error repudiandae accusantium! Illo, odio.</p>
+							    </div>
+							  </li>
+							</ul> <!-- cumstomer comment -->
+							<ul class="media-list customer-cmt">
+							  <li class="media">
+							    <div class="media-left">
+							        <img class="media-object" src="img/user-43950-100x100.png" alt="">
+							    </div>
+							    <div class="media-body">						      
+							      <p class="customer-name">Lorem ipsum dolor sit amet
+									<span class="orange-color pull-right">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+							      </p>
+							      
+							      <p>Cectetur adipisicing elit. Mollitia dolore vitae perferendis quasi necessitatibus at voluptatem neque est unde, debitis soluta ex consectetur dicta, hic error repudiandae accusantium! Illo, odio.</p>
+							    </div>
+							  </li>
+							</ul>
+							<ul class="media-list customer-cmt">
+							  <li class="media">
+							    <div class="media-left">
+							        <img class="media-object" src="img/user-43950-100x100.png" alt="">
+							    </div>
+							    <div class="media-body">						      
+							      <p class="customer-name">Lorem ipsum dolor sit amet
+									<span class="orange-color pull-right">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+							      </p>
+							      
+							      <p>Cectetur adipisicing elit. Mollitia dolore vitae pe hic error repudiandae accusantium! Illo, odio.</p>
+							    </div>
+							  </li>
+							</ul>
+							<ul class="media-list customer-cmt">
+							  <li class="media">
+							    <div class="media-left">
+							        <img class="media-object" src="img/user-43950-100x100.png" alt="">
+							    </div>
+							    <div class="media-body">						      
+							      <p class="customer-name">Lorem ipsum dolor sit amet
+									<span class="orange-color pull-right">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+							      </p>
+							      
+							      <p>voluptatem neque est unde, debitis soluta ex consectetur dicta, hic error repudiandae accusantium! Illo, odio.</p>
+							    </div>
+							  </li>
+							</ul> <!-- cumstomer comment -->
+							<ul class="media-list customer-cmt">
+							  <li class="media">
+							    <div class="media-left">
+							        <img class="media-object" src="img/user-43950-100x100.png" alt="">
+							    </div>
+							    <div class="media-body">						      
+							      <p class="customer-name">Lorem ipsum dolor sit amet
+									<span class="orange-color pull-right">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+							      </p>
+							      
+							      <p>Cectetur adipisicing elit. Mollitia dolore vitae pe hic error repudiandae accusantium! Illo, odio.</p>
+							    </div>
+							  </li>
+							</ul>
+							<ul class="media-list customer-cmt">
+							  <li class="media">
+							    <div class="media-left">
+							        <img class="media-object" src="img/user-43950-100x100.png" alt="">
+							    </div>
+							    <div class="media-body">						      
+							      <p class="customer-name">Lorem ipsum dolor sit amet
+										<span class="orange-color pull-right">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+									</span>
+							      </p>
+							      
+							      <p>voluptatem neque est unde, debitis soluta ex consectetur dicta, hic error repudiandae accusantium! Illo, odio.</p>
+							    </div>
+							  </li>
+							</ul> <!-- cumstomer comment -->
+							<div class="next-page-cmt">
+							<ul class="pagination pagination-sm">
+								<li><a href="#">&laquo;</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+							</div>
+					</div><!--  info comment -->
+				</div> <!-- col md 8 -->
+				<div class="col-md-4 info-detail"> <!-- info detail -->
+					<p class="p-title">
+						Thông số kỹ thuật
+					</p>
+					<table class="table table-striped">
+							<tr>
+								<th>Băng tần - Sim</th>
+								<td><a href="#">2G/3G, LTE</a></td>
+							</tr>
+							<tr>
+								<th>Bảo mật nâng cao</th>
+								<td><a href="#">Mở khóa bằng vân tay</a></td>
+							</tr>
+							<tr>
+								<th>Màu sắc</th>
+								<td><a href="#">Bạc, Đỏ, Gold, Xám</a></td>
+							</tr>
+							<tr>
+								<th>Cảm biến</th>
+								<td><a href="#">Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer</a></td>
+							</tr>
+							<tr>
+								<th>CPU</th>
+								<td><a href="#">Apple A11 Bionic</a></td>
+							</tr>
+							<tr>
+								<th>Bộ nhớ trong</th>
+								<td><a href="#">64 GB</a></td>
+							</tr>
+							<tr>
+								<th>Camera sau</th>
+								<td><a href="#">Dual 12 MP</a></td>
+							</tr>
+							<tr>
+								<th>Camera trước</th>
+								<td><a href="#">7.0 MP</a></td>
+							</tr>
+							<tr>
+								<th>Pin</th>
+								<td><a href="#">Li-Ion 2691 mAh</a></td>
+							</tr>
+							<tr>
+								<th>Ram</th>
+								<td>3 GB</td>
+							</tr>
+							<tr>
+								<th>Màn hình</th>
+								<td>IPS LCD, 5.5", Retina HD</td>
+							</tr>
+							<tr>
+								<th>Sim</th>
+								<td>1 Nano Sim</td>
+							</tr>
+							<tr>
+								<th>Tình trạng sản phẩm</th>
+								<td>Mới</td>
+							</tr>
+					</table>
+					<div class="buynow"> <!-- buy now -->
+						<p class="buynow-title"><b>iPhone 8 Plus 64Gb Mới Trôi Bảo Hành Máy Trần</b> <span>chưa kích hoạt, bản Hàn Quốc, kèm sạc cable chính hãng</span></p>
+						<div class="buynow-img">
+							<img src="img/ip8plus-64gb.png" alt="iphone 8 64GB">
+						</div>
+						<div>
+							<div class="panel-heading">
+								KHUYẾN MÃI VÀ ƯU ĐÃI
+							</div>
+							<div class="panel-body">
+								<p>
+								    <span><i class="fa fa-heart"></i> <b class="orange-color">20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K <br>
+										   <i class="fa fa-heart"></i> Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</b></span> <br>
+									<i class="fa fa-heart"></i> Tặng sạc, cable Apple chính hãng Titan trị giá <b>300.000vnđ</b> <br>
+									<i class="fa fa-heart"></i> Tặng gậy chụp ảnh trị giá <b>99.000vnđ</b> <br>
+									<i class="fa fa-heart"></i> Tặng tay cầm chơi game trị giá <b>99.000vnđ</b> <br>
+									<i class="fa fa-heart"></i> Combo Ốp Lưng + Kính Cường Lực giá chỉ <b>69.000vnđ</b> <br>
+									<i class="fa fa-heart"></i> Nâng cấp sạc, cable chính hãng Apple phụ <b>250.000vnđ</b>
+								</p>
+							</div>
+						</div>
+						<div class="btn-effect">
+						<button class="btn btn-muangay">MUA NGAY<span class="btn-txt">Giao tận nơi hoặc nhận ở cửa hàng</span><span class="btn-hover"></span></button>
+						</div>
+					</div>  <!-- buy now -->
+				</div> <!-- info detail -->
+			</div><!--  row  -->
+		</div> <!-- main info -->
+
+		<div class="sp-tuongtu">
+			<p class="p-title">SẢN PHẨM TƯƠNG TỰ</p>
+			<div class="sptt-content"> <!-- md-news thumb -->
+				<div class="owl-carousel owl-theme">
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/ip8plus-64gb.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 64Gb Cũ Nguyên Bản Đẹp Như Mới</p>
+									<span class="subs">Đẹp như mới, tặng kèm sạc, cable chính hãng</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/iphone8.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 256Gb Trôi Bảo Hành Máy Trần Mới 100%</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/iphone8.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 256Gb Cũ Nguyên Bản Đẹp Như Mới</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/iphone8-plus-gold.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 128Gb Cũ Nguyên Bản Like New</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/ip8plus-64gb.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 32Gb Cũ Nguyên Bản</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 256Gb Trôi Bảo Hành Máy Trần">
+									<img src="img/phone-300x399.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 256Gb Trôi Bảo Hành Máy Trần</p>
+									<span class="subs">chưa kích hoạt, kèm sạc cable chính hãng</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64GB Trôi Bảo Hành Máy Trần">
+									<img src="img/phone-300x399.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 64GB Trôi Bảo Hành Máy Trần</p>
+									<span class="subs">Đẹp như mới, tặng kèm sạc, cable chính hãng</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/iphone8-plus-gold.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 64Gb Cũ Nguyên Bản</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/iphone8-plus-gold.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 64Gb Cũ Nguyên Bản</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="">
+									<img src="img/ip8plus-64gb.png" alt="iphhone 8 plus">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64GB Trôi Bảo Hành Máy Trần">
+									<img src="img/phone-300x399.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 64GB Trôi Bảo Hành Máy Trần</p>
+									<span class="subs">Đẹp như mới, tặng kèm sạc, cable chính hãng</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/iphone8-plus-gold.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 64Gb Cũ Nguyên Bản</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="iPhone 8 Plus 64Gb Cũ Nguyên Bản">
+									<img src="img/iphone8-plus-gold.png" alt="iphhone 8 plus">
+									<p>iPhone 8 Plus 64Gb Cũ Nguyên Bản</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="">
+									<img src="img/ip8plus-64gb.png" alt="iphhone 8 plus">
+									<p>TSoluta beatae, accusantium ratione unde voluptatem consequuntur ipsum natus veniam cum ab, 8</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+							<div class="sptt-thumb">
+								<a href="#" title="">
+									<img src="img/ip8plus-64gb.png" alt="iphhone 8 plus">
+									<p>Totam mollitia nihil quis ea, dolorum. Fugit cupiditate, error aliquid</p>
+									<span class="subs">lorem app conlen to sia cimel der len codaiz</span>
+									<span class="price orange-color">990.000.000 VNĐ</span>
+								</a>
+							</div>
+					</div>		
+			</div> <!-- md-news thumb -->
+		</div>
+
+	</div> <!-- container -->
+</div><!--  main content -->
+
+<!-- footer -->
+<div id="footer">
+	<div class="container-fluid hidden-xs">
+		<div class="container footer-1">
+			<div class="col-lg-3 col-xs-6">
+				<div class="footer-col">
+					<i class="fa fa-car"></i>
+					<p><a href=""><span style="font-weight: bold;">Miễn phí </span><br><span>Vận chuyển toàn quốc</span></a></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<div class="footer-col">
+					<i class="fa fa-question-circle-o"></i>
+					<p><a href=""><span style="font-weight: bold;">Hỏi Đáp </span><br><span>Mua hàng online</span></a></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<div class="footer-col">
+					<i class="fa fa-undo"></i>
+					<p><a href=""><span style="font-weight: bold;">Đổi Trả </span><br><span>Dễ dàng lên tới 45 ngày</span></a></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<div class="footer-col">
+					<i class="fa fa-handshake-o"></i>
+					<p><a href=""><span style="font-weight: bold;">Hợp tác cung ứng </span><br><span>Cho di động thông minh</span></a></p>
+				</div>
+			</div>
+			<div class="clear"></div> <!-- clear both -->
+		</div>
+	</div>
+	<div class="footer-2">
+		<div class="container">
+			<div class="col-md-3 col-xs-6">
+				<p><a href="#">Giới thiệu công ty</a></p>
+				<p><a href="#">Hệ thống cửa hàng</a></p>
+				<p><a href="#">Tuyển dụng</a></p>
+				<p><a href="#">Chính sách bảo mật</a></p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<p><a href="#">Chính sách bảo hành</a></p>
+				<p><a href="#">Chính sách đổi trả sản phẩm</a></p>
+				<p><a href="#">Hỏi đáp mua hàng online</a></p>
+				<p><a href="#">Phương thức thanh toán</a></p>
+			</div>
+			<div class="col-md-3 col-sm-6 hidden-xs">
+				<p><a href="#">Gọi mua hàng: 1900 0000</a></p>
+				<p><a href="#">Gọi bảo hành: 1900 0000</a></p>
+				<p><a href="#">Gọi hỗ trợ: 1900 0000</a></p>
+			</div>
+			<div class="col-md-3 col-sm-6 hidden-xs">
+				<p><a href="#">Lorem ipsum dolor sit amet</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="footer-3">
+		<p><i class="fa fa-copyright"></i> Lorem ipsum dolor sit amet</p>
+		<p class="hidden-xs">consectetur adipisicing elit. Facilis, cumque! Obcaecati delectus placeat hic odio facere</p>
+		<p class="hidden-xs">ut dolorem a, accusantium autem, soluta, quibusdam distinctio quod!</p>
+	</div>
+</div> <!-- footer -->
+
+<!-- vi tri (mobile only) -->
+<div id="local-on-bot" class="hidden-lg hidden-md hidden-sm">
+	<div class="container-fluid">
+		<div class="row">
+			<ul class="list-unstyled">
+				<li class="col-xs-4">
+					<a href="#"><span><i class="fa fa-location-arrow"></i></span></a>
+					<select name="" id="thanhpho" onchange="addLocal()">
+						<option value="hn">Hà Nội (4)</option>
+						<option value="hcm">Hồ Chí Minh (3)</option>
+						<option value="dn">Đà Nẵng (2)</option>
+						<option value="cth">Cần Thơ (1)</option>
+						<option value="hp">Hải Phòng (1)</option>
+					</select>
+				</li>
+				<li class="col-xs-7">
+					<select name="" id="diachi">
+					</select>
+				</li>
+				<li class="col-xs-1">
+					<a href="#"><span><i class="fa fa-phone"></i></span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- back to top -->
+<div class="hidden-xs hidden-sm hidden-md">
+	<button id="back-to-top" class="btn btn-md" data-toggle="popover" title="Lên đầu trang"><i class="fa fa-arrow-circle-up"></i></button>
+</div>
+  <!-- Local bootstrap  JS -->
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
+ <script src="index.js"></script>
+ <script src="smartphone.js"></script>	
+</body>
+</html>

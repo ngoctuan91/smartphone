@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>My first project</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta property="og:title" content="Online Shop">
+    <meta property="og:description" content="My 1st Project">
+    <meta property="og:image" content="https://drive.google.com/file/d/1rc35DrjJIZIOgcrpdyoK7Ovyk2B_NJOk/view?usp=sharing">
+    <meta property="og:site_name" content="Welcome">
+
+	<link type="image/x-icon" href="img/favicon.ico" rel="icon">
+    <!-- Local bootstrap CSS  -->
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="banner.css">
+    <link rel="stylesheet" type="text/css"" href="index.css">
+    <link rel="stylesheet" type="text/css"" href="footer.css">
+</head>
+<body>
+<div id="header">
+
+	<!-- nav top -->
+	<div id="nav-top" class="hidden-sm hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class=" col-lg-6 col-md-4">
+					<span><i class="fa fa-star" aria-hidden="true"></i> Hệ thống bán lẻ Di Động Thông Minh</span>
+				</div>
+				<div class="col-lg-6 col-md-8">
+					<ul class="list-unstyled pull-right">
+						<li class="col-6 nav-top-show">
+							<a href="#"><i class="fa fa-star" aria-hidden="true"></i> <span>Chăm sóc khách hàng <i class="fa fa-caret-down"></i></span></a>
+							<ul class="list-unstyled nav-top-down">
+								<li><a href="#">Hỗ trợ facebook</a></li>
+								<li><a href="#">Hỏi đáp mua hàng online</a></li>
+								<li><a href="#">Chính sách đổi trả</a></li>
+								<li><a href="#">Chính sách bảo hành</a></li>
+								<li><a href="#">Phương thức thanh toán</a></li>
+							</ul>
+						</li>
+						<li class="col-6"><a href="#" title="Chanel chính thức"><i class="fa fa-youtube-play"></i> dReviews</a></li>
+						<li class="col-6"><a href="#" title="Fanpage chính thức"><i class="fa fa-facebook-f"></i> Fanpage</a></li>
+						<li class="col-6"> 
+							<select name="local" id="select-local">
+								<option value="">Hà Nội</option>
+								<option value="">Hồ Chí Minh</option>
+								<option value="">Đà Nẵng</option>
+								<option value="">Hải phòng</option>
+								<option value="">Cần Thơ</option>
+							</select>
+						</li>
+						<div class="clear"></div><!--  clear both -->
+					</ul>
+				</div>
+
+			</div>		<!-- row -->
+		</div> <!-- container -->
+	</div> <!-- nav-top hidden sm xs -->
+	
+	<!-- nav header -->
+	<div id="nav-header">
+		<div class="container">
+				<div class="col-12 col-sm-12 col-lg-3 col-1">
+					<a href="index.html" title="Di động thông minh"><img src="img/logo.png" alt="logo" id="logo"></a>
+				</div>
+				<div class="col-12 col-sm-12 col-lg-4 col-2">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Bạn cần tìm...">
+						<span class="input-group-btn">
+					    	<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+					    </span>
+					</div><!-- /input-group -->
+				</div>
+				<div class="col-12 col-sm-12 col-lg-5 hidden-xs col-3">
+					<ul class="list-unstyled">
+						<li class="col-sm-4">
+							<a href="#" title="Tin công nghệ" class="nav-i-s">
+								<i class="fa fa-newspaper-o"></i> 
+								<span>Tin tức</span>
+							</a>
+						</li>
+						<li class="col-sm-4  nav-header-show">
+							<a href="#" class="nav-i-s">
+								<i class="fa fa-user-o"></i> 
+								<span>Tài khoản <i class="fa fa-caret-down" style="font-size: 15px;"></i> </span> 
+							</a>
+							<ul class="list-unstyled nav-top-down">
+								<li><button class="btn btn-danger btn-block" data-toggle="modal" data-target="#dangnhap">Đăng nhập</button></li>
+								<li><span>Chưa có tài khoản?</span></li>
+								<li><a href="" title="đăng ký" class="orange-color" data-toggle="modal" data-target="#dangky">Đăng ký tài khoản mới</a></li>
+							</ul>
+						</li>
+						<li class="col-sm-4"><!--  gio hang -->
+							<a href="#"><i class="fa fa-shopping-cart"></i><span class="badge" style="background: #f60">0</span></a>
+						</li><!--  gio hang -->
+					</ul>
+				</div>
+		</div>
+	</div>
+				<!-- modal đăng nhập   -->
+			<div class="modal fade" id="dangnhap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title modal-info" id="exampleModalLabel">Đăng nhập</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="control-label">Tài khoản</label>
+			            <input type="text" class="form-control" id="recipient-name" placeholder="Nhập địa chỉ e-mail">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label">Mật khẩu</label>
+			             <input type="text" class="form-control" id="recipient-name" placeholder="Nhập mật khẩu">
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-lg btn-danger pull-left">Đăng nhập</button>
+			        <a data-toggle="modal" href ="#dangky" data-dismiss ="modal" class="orange-color">Bạn chưa có tài khoản? Đăng ký ngay</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+			<!-- modal đăng ký -->
+			<div class="modal fade" id="dangky" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title modal-info" id="exampleModalLabel">Đăng ký tài khoản</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="form-group">
+			            <label for="recipient-name" class="control-label">Tài khoản</label>
+			            <input type="text" class="form-control" id="recipient-name" placeholder="Nhập địa chỉ e-mail">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label">Mật khẩu</label>
+			             <input type="text" class="form-control" id="recipient-name" placeholder="Nhập mật khẩu">
+			          </div>
+			          <div class="form-group">
+			            <label for="message-text" class="control-label">Xác nhận mật khẩu</label>
+			             <input type="text" class="form-control" id="recipient-name" placeholder="Nhập lại mật khẩu">
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-lg btn-danger pull-left">Đăng ký</button>
+			        <a href="#dangnhap" data-dismiss = "modal" data-toggle = "modal" class="orange-color">Bạn đã có tài khoản? Đăng nhập tại đây</a>
+			      </div>
+			    </div>
+			  </div>
+			</div> <!-- modal đăng ký và đăng nhập-->
+
+	<!-- navbar -->
+	<div id="navbar-main">
+			<nav class="navbar navbar-default orange-bg-color" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand hidden-lg hidden-md hidden-sm white-color" href="#">Hotline: 0961105333</a>
+					</div>
+			
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-mobile" style="font-size: 20px"></i>Điện thoại <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+									<li><a href="products.html">iPhone</a></li>
+									<li><a href="products.html">Xiaomi</a></li>
+									<li><a href="products.html">Meizu</a></li>
+									<li><a href="products.html">Samsung</a></li>
+									<li><a href="products.html">Blackberry</a></li>
+									<li><a href="products.html">Oppo</a></li>
+									<li><a href="products.html">Nokia</a></li>
+									<li><a href="products.html"> Vsmart</a></li>
+									<li><a href="products.html">Xem tất cả</a></li>
+									<li role="separator" class="divider"></li>
+					          </ul>
+							</li>
+							 <li class="dropdown-none">
+								<a href="products.html"><i class="fa fa-mobile" style="font-size: 20px"></i>Điện thoại</a>
+							</li>
+							<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-tablet"></i>Tablet <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+									<li><a href="products.html">iPad</a></li>
+									<li><a href="products.html">Galaxy Tab</a></li>
+									<li><a href="products.html">Asus Pad</a></li>
+									<li><a href="products.html">Playbook</a></li>
+									<li><a href="products.html">Xem tất cả</a></li>
+									<li role="separator" class="divider"></li> 
+					          </ul>
+							</li>
+							<li class="dropdown-none">
+								<a href="products.html"><i class="fa fa-tablet"></i>Tablet</a>
+							</li>
+							<li>
+								<a href="products.html"><i class="fa fa-apple"></i>Apple</a>
+							</li>
+							<li>
+								<a href="products.html"><i class="fa fa-android"></i>Android</a>
+							</li>
+							<li>
+								<a href="products.html"><i class="fa fa-clock-o"></i>Apple Watch</a>
+							</li>
+							<li>
+								<a href="products.html"><i class="fa fa-headphones"></i>Phụ kiện</a>
+							</li>
+							<li class="hidden-sm">
+								<a href="products.html"><i class="fa fa-cc-visa"></i>Trả góp 0%</a>
+							</li>
+							<li class="">
+								<a href="products.html"><i class="fa fa-gift"></i>Khuyến mãi</a>
+							</li>
+						</ul>
+						
+					</div><!-- /.navbar-collapse -->
+				</div> <!-- container -->
+			</nav> 
+	</div> <!-- nav bar --> 
+</div> <!-- header -->
+<!-- header end -->
+
+<!-- main content -->
+<div id="main-content">
+	<div class="container">
+		<!-- banner -->
+		<div class="col-lg-8 col-sm-12" id="banner">
+			<div id="carousel-id" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators hidden-xs">
+					<li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-id" data-slide-to="1" class=""></li>
+					<li data-target="#carousel-id" data-slide-to="2" class=""></li>
+					<li data-target="#carousel-id" data-slide-to="3" class=""></li>
+				</ol>
+				<div class="carousel-inner img-responsive">  <!-- slide img -->
+					<div class="item active">
+						<a href="products.html"><img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="img/banner1.jpg"></a>
+					</div>
+					<div class="item">
+						<a href="products.html"><img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="img/banner2.jpg"></a>
+					</div>
+					<div class="item">
+						<a href="products.html"><img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="img/banner3.jpg"></a>
+					</div>
+					<div class="item">
+						<a href="products.html"><img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="img/banner4.jpg"></a>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div> <!-- carousel  -->
+			<div id="banner-info" class="hidden-xs carousel slide"> <!-- banner info -->
+				<div class="row">
+					<div class="col-xs-3">
+						<a href="" data-target="#carousel-id" data-slide-to="0">Tri ân khách hàng - ngập tràn quà tặng</a>
+					</div>
+					<div class="col-xs-3">
+						<a href="" data-target="#carousel-id" data-slide-to="1">iPad giá rẻ bất ngờ chiến liên quân thả ga</a>
+					</div>
+					<div class="col-xs-3">
+						<a href="" data-target="#carousel-id" data-slide-to="2">Lorem ipsum dolor sit amet psum do oloribus</a>
+					</div>
+					<div class="col-xs-3">
+						<a href="" data-target="#carousel-id" data-slide-to="3">Eperiam quo! Debitis quod doloribus enim.</a>
+					</div> 
+				</div>
+			</div> <!-- banner info  -->
+		</div><!-- slide banner -->
+
+		<div class="col-lg-4 col-sm-12" id="banner-col-news"> <!-- banner-col-news -->
+			<div class="hidden-xs hidden-sm hidden-md banner-col-news-gif"><a href="#" title="showroom"><img src="img/okei.gif" alt="showroom" width="100%" height="auto"></a></div>
+			<div class="col-xs-12 white-bg-color banner-col-news-content">
+				<div class="row-1">
+					<h5>TIN CÔNG NGHỆ <span class="pull-right"><a href="#">Xem tất cả</a></span></h5>
+				</div>
+				<div class="row-2 list-unstyled col-lg-12 col-sm-6 col-xs-12">
+					<li class="bn-news-thumb">
+						<a href="#"><img src="img/Slide.jpg" alt=""></a>
+					</li>
+					<li class="bn-news-title">
+						<a href="#" title="Bão giá cuối năm, nhận trăm quà xịn">Bão giá cuối năm, nhận trăm quà xịn – RMN 5 Pro 1990K, iPhone 6s 3390K tại 441 Nguyễn Văn Cừ, Long Biên</a>
+						<p>Thứ Tư, 26/12/2018 </p>
+					</li>
+				</div>
+				<hr class="col-lg-12 col-xs-12 hidden-md hidden-sm">
+				<div class="row-3 list-unstyled col-lg-12 col-sm-6 col-xs-12">
+					<li class="bn-news-thumb">
+						<a href=""><img src="img/news.jpg" alt=""></a>
+					</li>
+					<li class="bn-news-title">
+						<a href="#" title="CHRISTMAS DAYS – SALE CUỒNG SAY: Mua smartphone, phụ kiện giá gốc tại DDTM">CHRISTMAS DAYS – SALE CUỒNG SAY: Mua smartphone, phụ kiện giá gốc tại DDTM</a>
+						<p>Thứ Tư, 26/12/2018 </p>
+					</li>
+				</div>
+			</div>
+		</div> <!-- banner news -->
+		<div class="clear"></div> <!-- clear both -->
+		<!-- banner end -->
+		
+		<div id="youtb-news" class="container">
+			<div class="row">
+				<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+					<div class="youtb-thum">
+						<div class="youtb-col">
+							<a href="#"><img src="img/vsmart-joy1di-dong-thong-minh-300x169.jpg" alt="youtb-news"></a>
+						</div>
+						<p>Điện thoại cấu hình thấp chơi đc những game gì?</p>
+					</div>
+				</div>
+				<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+					<div class="youtb-thum">
+						<div class="youtb-col">
+							<a href="#"><img src="img/smartphone-choi-game-300x169.jpg" alt="youtb-news"></a>
+						</div>
+						<p>TOP điện thoại dưới 3 triệu chơi PUBG mobile</p>
+					</div>
+				</div>
+				<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+					<div class="youtb-thum">
+						<div class="youtb-col">
+							<a href="#"><img src="img/smartphone-gaming-2018-300x169.jpg" alt="youtb-news"></a>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+					</div>
+				</div>
+				<div class="col-lg-3 hidden-xs hidden-sm hidden-md">
+					<div class="youtb-thum  youtb-thum-last">
+						<div class="youtb-col">
+							<a href="#"><img src="img/pamu-scroll-review-thumb-300x169.jpg" alt="youtb-news"></a>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+					</div>
+				</div>
+			</div>
+		</div><!--  Youtube news -->
+
+		<div class="products-title"> <!-- products -tittle -->
+			<h5 class="col-md-3 col-xs-12 h5-title"><b>SẢN PHẨM NỔI BẬT NHẤT</b></h5>
+			<ul class="list-unstyled col-md-9 col-sm-12 hidden-xs">
+				<li><a href="products.html">iPhone</a></li>
+				<li><a href="products.html">iPad</a></li>
+				<li><a href="products.html">Xiaomi</a></li>
+				<li><a href="products.html">Meizu</a></li>
+				<li><a href="products.html">Samsung</a></li>
+				<li><a href="products.html">Blackberry</a></li>
+				<li><a href="products.html">Oppo</a></li>
+				<li><a href="products.html">Nokia</a></li>
+				<li><a href="products.html">Fujisu</a></li>
+				<li><a href="products.html"> Vsmart</a></li>
+				<li><a href="products.html">Xem tất cả</a></li>
+			</ul>
+		</div> <!-- products -tittle -->
+		<div class="clear"></div>
+
+		<div id="products-list"><!--  products-list -->
+			<div class="col-lg-4 col-sm-6 col-xs-12"> 
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/meizu5c.png" alt="meizu"></a>
+					</div>
+					<div class="prd-price">
+						<p>Meizu M5C Nguyên Seal Thời Trang</p>
+						<span>1.799.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div> 
+			</div> <!--khung ô sản phẩm  -->
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/Note9.png" alt="note 9"></a>
+					</div>
+					<div class="prd-price">
+						<p>Samsung Galaxy Note 9 Chính hãng</p>
+						<span>22.990.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/note6pro.png" alt="note 6 pro"></a>
+					</div>
+					<div class="prd-price">
+						<p>Xiaomi Redmi Note 6 Pro Chính Hãng</p>
+						<span>4.290.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/a72018.png" alt="a7 2018"></a>
+					</div>
+					<div class="prd-price">
+						<p>Samsung Galaxy A7 2018 Chính hãng</p>
+						<span>7.690.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/mi8.png" alt="mi 8"></a>
+					</div>
+					<div class="prd-price">
+						<p>Xiaomi Mi 8 Lite Chính Hãng</p>
+						<span>5.690.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/meizuS01.png" alt="a7 2018"></a>
+					</div>
+					<div class="prd-price">
+						<p>Meizo S 2018 Nguyên Seal</p>
+						<span>3.690.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+<!-- clear both -->	<div class="clear"></div> <!-- clear both -->
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/meizu5c.png" alt="meizu"></a>
+					</div>
+					<div class="prd-price">
+						<p>Meizu M5C Nguyên Seal Thời Trang</p>
+						<span>1.799.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/Note9.png" alt="note 9"></a>
+					</div>
+					<div class="prd-price">
+						<p>Samsung Galaxy Note 9 Chính hãng</p>
+						<span>22.990.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/note6pro.png" alt="note 6 pro"></a>
+					</div>
+					<div class="prd-price">
+						<p>Xiaomi Redmi Note 6 Pro Chính Hãng</p>
+						<span>4.290.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/a72018.png" alt="a7 2018"></a>
+					</div>
+					<div class="prd-price">
+						<p>Samsung Galaxy A7 2018 Chính hãng</p>
+						<span>7.690.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">
+				<div class="product">
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/mi8.png" alt="mi 8"></a>
+					</div>
+					<div class="prd-price">
+						<p>Xiaomi Mi 8 Lite Chính Hãng</p>
+						<span>5.690.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs">
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6 col-xs-12">  <!-- khung ô sản phẩm -->
+				<div class="product"> <!-- ô sản phẩm -->
+					<div class="prd-thumb">
+						<a href="smartphone.html"><img src="img/meizuS01.png" alt="a7 2018"></a>
+					</div>
+					<div class="prd-price">
+						<p>Meizo S 2018 Nguyên Seal</p>
+						<span>3.690.000 VNĐ</span>
+					</div>
+					<div class="prd-detail hidden-xs"><!--  chi tiết sản phẩm -->
+						<a href="smartphone.html">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<span>9.999.000 VNĐ</span>
+							<h6><b>Khuyến mãi</b></h6>
+							<ul class="list-unstyled">
+								<li>♥20 khách đặt hàng sớm tặng PDP Xiaomi 10.000mAh trị giá 500K</li>
+								<li>♥Tặng 30 ngày đổi trả - 12 tháng BH cả nguồn và màn hình</li>
+								<li>♥Tặng tay cầm chơi game trị giá 99.000vnđ</li>
+								<li>♥Combo Ốp Lưng + Kính Cường Lực giá chỉ 69.000vnđ</li>
+								<li>♥Nâng cấp sạc, cable chính hãng Apple phụ 250.000vnđ</li>
+							</ul>
+						</a>
+					</div> <!-- chi tiết sản phẩm -->
+				</div> <!-- ô sản phẩm -->
+			</div> <!-- khung ô sản phẩm -->
+			<!-- clear both -->	<div class="clear"></div>
+		</div> <!--products-list -->
+
+
+		<div class="products-title phu-kien-title"> <!-- products -tittle -->
+			<div class="row">
+				<h5 class="col-md-3 col-xs-12 h5-title"><b>PHỤ KIỆN GIÁ RẺ</b></h5>
+				<ul class="list-unstyled col-md-9 col-sm-12 hidden-xs">
+					<li><a href="#">Sạc dự phòng</a></li>
+					<li><a href="#">Cáp sạc</a></li>
+					<li><a href="#">Loa, tai nghe</a></li>
+					<li><a href="#">Ốp lưng</a></li>
+					<li><a href="#">Dán màn hình</a></li>
+					<li><a href="#">Phụ kiện khác</a></li>
+				</ul>
+			</div>
+		</div> <!-- products -tittle -->
+
+		<div id="list-phukien">
+			<div class="row">
+				<div class="col-md-2 col-sm-3 col-xs-4 col-mn-6">
+					<div class="prd-phukien">
+						<div class="pk-thumb">
+							<a href="#"><img src="img/aw-trang-300x399.png"></a>
+						</div>
+						<div class="pk-price">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<p><span>9.999.000 VNĐ</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 col-mn-6">
+					<div class="prd-phukien">
+						<div class="pk-thumb">
+							<a href="#"><img src="img/seri1-trang-01-300x399.png" alt=""></a>
+						</div>
+						<div class="pk-price">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<p><span>9.999.000 VNĐ</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 hidden-mini">
+					<div class="prd-phukien">
+						<div class="pk-thumb">
+							<a href="#"><img src="img/tainhg5-300x300.png" alt=""></a>
+						</div>
+						<div class="pk-price">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<p><span>9.999.000 VNĐ</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 hidden-xs">
+					<div class="prd-phukien">
+						<div class="pk-thumb">
+							<a href="#"><img src="img/air-300x399.png" alt=""></a>
+						</div>
+						<div class="pk-price">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<p><span>9.999.000 VNĐ</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 hidden-xs hidden-sm">
+					<div class="prd-phukien">
+						<div class="pk-thumb">
+							<a href="#"><img src="img/seri1-trang-01-300x399.png" alt=""></a>
+						</div>
+						<div class="pk-price">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<p><span>9.999.000 VNĐ</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 hidden-xs hidden-sm">
+					<div class="prd-phukien">
+						<div class="pk-thumb">
+							<a href="#"><img src="img/air-300x399.png" alt=""></a>
+						</div>
+						<div class="pk-price">
+							<p>Lorem ipsum dolor sit amet consectetur</p>
+							<p><span>9.999.000 VNĐ</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- phu kien -->
+	</div><!--  container -->
+</div> <!-- main content -->
+<!-- main content -->
+
+<!-- footer -->
+<div id="footer">
+	<div class="container-fluid hidden-xs">
+		<div class="container footer-1">
+			<div class="col-lg-3 col-xs-6">
+				<div class="footer-col">
+					<i class="fa fa-car"></i>
+					<p><a href=""><span style="font-weight: bold;">Miễn phí </span><br><span>Vận chuyển toàn quốc</span></a></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<div class="footer-col">
+					<i class="fa fa-question-circle-o"></i>
+					<p><a href=""><span style="font-weight: bold;">Hỏi Đáp </span><br><span>Mua hàng online</span></a></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<div class="footer-col">
+					<i class="fa fa-undo"></i>
+					<p><a href=""><span style="font-weight: bold;">Đổi Trả </span><br><span>Dễ dàng lên tới 45 ngày</span></a></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-xs-6">
+				<div class="footer-col">
+					<i class="fa fa-handshake-o"></i>
+					<p><a href=""><span style="font-weight: bold;">Hợp tác cung ứng </span><br><span>Cho di động thông minh</span></a></p>
+				</div>
+			</div>
+			<div class="clear"></div> <!-- clear both -->
+		</div>
+	</div>
+	<div class="footer-2">
+		<div class="container">
+			<div class="col-md-3 col-xs-6">
+				<p><a href="#">Giới thiệu công ty</a></p>
+				<p><a href="#">Hệ thống cửa hàng</a></p>
+				<p><a href="#">Tuyển dụng</a></p>
+				<p><a href="#">Chính sách bảo mật</a></p>
+			</div>
+			<div class="col-md-3 col-xs-6">
+				<p><a href="#">Chính sách bảo hành</a></p>
+				<p><a href="#">Chính sách đổi trả sản phẩm</a></p>
+				<p><a href="#">Hỏi đáp mua hàng online</a></p>
+				<p><a href="#">Phương thức thanh toán</a></p>
+			</div>
+			<div class="col-md-3 col-sm-6 hidden-xs">
+				<p><a href="#">Gọi mua hàng: 1900 0000</a></p>
+				<p><a href="#">Gọi bảo hành: 1900 0000</a></p>
+				<p><a href="#">Gọi hỗ trợ: 1900 0000</a></p>
+			</div>
+			<div class="col-md-3 col-sm-6 hidden-xs">
+				<p><a href="#">Lorem ipsum dolor sit amet</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet</a></p>
+				<p><a href="#">Lorem ipsum dolor sit amet</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="footer-3">
+		<p><i class="fa fa-copyright"></i> Lorem ipsum dolor sit amet</p>
+		<p class="hidden-xs">consectetur adipisicing elit. Facilis, cumque! Obcaecati delectus placeat hic odio facere</p>
+		<p class="hidden-xs">ut dolorem a, accusantium autem, soluta, quibusdam distinctio quod!</p>
+	</div>
+</div> <!-- footer -->
+
+<!-- vi tri (mobile only) -->
+<div id="local-on-bot" class="hidden-lg hidden-md hidden-sm">
+	<div class="container-fluid">
+		<div class="row">
+			<ul class="list-unstyled">
+				<li class="col-xs-4">
+					<a href="#"><span><i class="fa fa-location-arrow"></i></span></a>
+					<select name="" id="thanhpho" onchange="addLocal()">
+						<option value="hn">Hà Nội (4)</option>
+						<option value="hcm">Hồ Chí Minh (3)</option>
+						<option value="dn">Đà Nẵng (2)</option>
+						<option value="cth">Cần Thơ (1)</option>
+						<option value="hp">Hải Phòng (1)</option>
+					</select>
+				</li>
+				<li class="col-xs-7">
+					<select name="" id="diachi">
+					</select>
+				</li>
+				<li class="col-xs-1">
+					<a href="#"><span><i class="fa fa-phone"></i></span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- back to top -->
+<div class="hidden-xs hidden-sm hidden-md">
+	<button id="back-to-top" class="btn btn-md" data-toggle="popover" title="Lên đầu trang"><i class="fa fa-arrow-circle-up"></i></button>
+</div>
+
+  <!-- Local bootstrap  JS -->
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="index.js"></script>	
+</body>
+</html>
